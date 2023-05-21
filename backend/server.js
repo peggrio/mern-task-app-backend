@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: false }))
 app.use(cors(
     {
         origin: ["http://localhost:3000",
-            "https://task-app-1azx-api.onrender.com"]
+            "https://task-app-1azx.onrender.com"]
     }
 ))
 app.use("/api/tasks", taskRoutes)
