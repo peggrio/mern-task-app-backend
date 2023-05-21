@@ -9,7 +9,10 @@ const cors = require("cors")
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.use(cors(
-    { origin: ["http://localhost:3000"] }
+    {
+        origin: ["http://localhost:3000",
+            "https://task-app-1azx-api.onrender.com"]
+    }
 ))
 app.use("/api/tasks", taskRoutes)
 
